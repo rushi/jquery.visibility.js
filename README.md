@@ -5,7 +5,7 @@ This jQuery plugin allows you to execute a particular callback when the browser'
 # Examples
 
     $(window).visibilityChange(function() {
-        // This will be executed when you navigate away from the tab
+        // This will be executed when you switch to another tab
         console.log("Goodbye World")
     });
 
@@ -13,7 +13,7 @@ Pass in some arguments:
 
     var a = 1, b = 2;
     $(window).visibilityChange(function() {
-        // This will be executed when you navigate away from the tab
+        // This will be executed when you switch to another tab
         console.log("Goodbye World. Here are some arguments", arguments)
     }, a, b);
 
