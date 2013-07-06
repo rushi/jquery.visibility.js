@@ -25,7 +25,9 @@
     }
 
     $(document).on(visibilityChange, function(e) {
-        _callback.apply(this, _callback_arguments);
+        var visibilityEvent = [{'state': state, 'name': visibilityChange}];
+        var combined_args = $.merge(visibilityEvent, _callback_arguments);
+        _callback.apply(this, combined_args);
     });
 
 })(jQuery, this);

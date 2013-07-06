@@ -4,15 +4,15 @@ This jQuery plugin allows you to execute a particular callback when the browser'
 
 # Examples
 
-    $(window).visibilityChange(function() {
+    $(window).visibilityChange(function(event) {
         // This will be executed when you switch to another tab
-        console.log("Goodbye World")
+        console.log("Goodbye World. I fired on" + event.name)
     });
 
 Pass in some arguments:
 
     var a = 1, b = 2;
-    $(window).visibilityChange(function() {
+    $(window).visibilityChange(function(event) {
         // This will be executed when you switch to another tab
         console.log("Goodbye World. Here are some arguments", arguments)
     }, a, b);
