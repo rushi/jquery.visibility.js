@@ -32,7 +32,7 @@ Check out [Mozilla's Documentation](https://developer.mozilla.org/en-US/docs/Web
 
 ## Browsers
 
-Google Chrome v28, Firefox 22, Internet Explorer isn't tested.
+Google Chrome v28 and Firefox 22 are tested but Internet Explorer is not.
 
 ## jQuery
 
